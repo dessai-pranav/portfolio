@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pranav Dessai – Software Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f8f9; --ink:#14202b; --muted:#5b6b78; --line:#d9e0e5; --accent:#0b6e7f; --tint:#e9f0f2;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f171d; --ink:#e7eef2; --muted:#93a4b0; --line:#25343f; --accent:#5cc3d4; --tint:#17232b;}
+}
+:root[data-theme="dark"]{--bg:#0f171d; --ink:#e7eef2; --muted:#93a4b0; --line:#25343f; --accent:#5cc3d4; --tint:#17232b;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:72px 24px 96px}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1.5px}
+a:hover{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+h1{font-weight:700;font-size:clamp(3rem,11vw,5.5rem);line-height:.95;letter-spacing:-.04em;margin:0 0 28px}
+.role{font-size:1.25rem;font-weight:500;margin:0 0 8px}
+.lede{color:var(--muted);max-width:56ch;margin:0 0 28px}
+.contact{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0;padding:0;list-style:none;font-size:.95rem}
+.avail{display:inline-flex;align-items:center;gap:10px;margin-top:28px;font-size:.95rem;color:var(--muted)}
+.avail::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--accent);animation:pulse 2.4s ease-out 1}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--accent)}100%{box-shadow:0 0 0 14px transparent}}
+
+section{margin-top:72px}
+h2{font-size:1rem;font-weight:500;color:var(--muted);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+summary::-webkit-details-marker{display:none}
+summary .t{font-weight:700;font-size:1.15rem;letter-spacing:-.01em}
+summary .s{color:var(--muted);font-size:.9rem;text-align:right}
+summary:hover .t{color:var(--accent)}
+summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+.body{padding:0 0 22px}
+.body p{margin:0 0 12px;color:var(--muted);max-width:60ch}
+.body ul{margin:0 0 14px;padding-left:1.1em;max-width:62ch}
+.body li{margin:6px 0}
+.body li::marker{color:var(--accent)}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px;padding:0;list-style:none}
+.stack li{margin:0;background:var(--tint);border-radius:4px;padding:2px 10px;font-size:.85rem}
+
+.row{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row dt{color:var(--muted);font-size:.95rem}
+.row dd{margin:0}
+.job{margin-bottom:0}
+.job h3{font-size:1.15rem;margin:0}
+.job .meta{color:var(--muted);font-size:.9rem;margin:2px 0 12px}
+dl{margin:0}
+.edu{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.edu span:last-child{color:var(--muted);text-align:right;font-size:.95rem}
+footer{margin-top:80px;color:var(--muted);font-size:.9rem}
+
+@media (max-width:560px){
+  main{padding-top:48px}
+  .row{grid-template-columns:1fr;gap:2px}
+  summary{flex-wrap:wrap}
+  summary .s{text-align:left;order:3;flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){.avail::before{animation:none}summary::after{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Pranav Dessai</h1>
+    <p class="role">Full-stack developer, studying AI/ML</p>
+    <p class="lede">Computer Engineering student in Goa who builds web applications with React, Node.js and PostgreSQL, with a focus on clean architecture and secure authentication.</p>
+    <ul class="contact">
+      <li><a href="mailto:gaunsdessaipranav47@gmail.com">gaunsdessaipranav47@gmail.com</a></li>
+      <li><a href="https://github.com/dessai-pranav" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/pranav-dessai" rel="noopener">LinkedIn</a></li>
+      <li><a href="tel:+918459489649">+91 84594 89649</a></li>
+    </ul>
+    <div class="avail">Open to internships and junior roles</div>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <details open>
+      <summary><span class="t">Campus Connect</span><span class="s">University collaboration platform</span></summary>
+      <div class="body">
+        <p>A full-stack platform for structured discussions across university departments.</p>
+        <ul>
+          <li>Threads, nested comments and voting, with duplicate vote prevention.</li>
+          <li>Relational schema in Drizzle ORM and PostgreSQL with foreign keys, ENUM roles and cascading deletes.</li>
+          <li>Authentication with bcrypt and JWT, plus role-based access control.</li>
+          <li>Responsive React and Tailwind CSS frontend with protected routes and token-based sessions.</li>
+        </ul>
+        <ul class="stack"><li>React</li><li>Express.js</li><li>PostgreSQL</li><li>Drizzle ORM</li></ul>
+        <a href="https://github.com/dessai-pranav" rel="noopener">View on GitHub</a>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="t">The Wild Oasis</span><span class="s">Hotel management dashboard</span></summary>
+      <div class="body">
+        <p>An internal dashboard for managing bookings, cabins and guest check-in and check-out.</p>
+        <ul>
+          <li>Supabase for authentication, PostgreSQL operations and file storage.</li>
+          <li>Server state and caching handled with TanStack React Query.</li>
+          <li>Protected routes, filtering, sorting, pagination and analytics charts.</li>
+          <li>Responsive UI built with Styled Components, including dark mode.</li>
+        </ul>
+        <ul class="stack"><li>React</li><li>Supabase</li><li>TanStack Query</li><li>Styled Components</li></ul>
+      </div>
+    </details>
+
+    <details>
+      <summary><span class="t">World Travel Tracker</span><span class="s">Interactive map application</span></summary>
+      <div class="body">
+        <p>Mark the cities you have visited on an interactive world map.</p>
+        <ul>
+          <li>Dynamic markers and location interactions with Leaflet and React-Leaflet.</li>
+          <li>State managed with Context API and useReducer.</li>
+          <li>Client-side routing with React Router and modular CSS Modules styling.</li>
+          <li>Mock REST API on JSON Server for storing travel data.</li>
+        </ul>
+        <ul class="stack"><li>React 19</li><li>React Router</li><li>Leaflet</li><li>JSON Server</li></ul>
+      </div>
+    </details>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Software Development Intern, frontend</h3>
+      <p class="meta">SS Technologies, July 2025 to present</p>
+      <ul class="body" style="padding-bottom:0;padding-left:1.1em">
+        <li>Built responsive UI components with HTML, CSS, JavaScript and React.</li>
+        <li>Assisted with API integration and improved usability.</li>
+        <li>Fixed layout bugs and improved cross-browser compatibility.</li>
+        <li>Worked within a team-based development process.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl>
+      <div class="row"><dt>Languages</dt><dd>C, C++, Python, Java, SQL, JavaScript, TypeScript</dd></div>
+      <div class="row"><dt>Frontend</dt><dd>React, Next.js, Tailwind CSS, HTML, CSS</dd></div>
+      <div class="row"><dt>Backend</dt><dd>Node.js, Express.js</dd></div>
+      <div class="row"><dt>Databases</dt><dd>PostgreSQL (Supabase), SQLite</dd></div>
+      <div class="row"><dt>Concepts</dt><dd>REST APIs, JWT authentication</dd></div>
+      <div class="row"><dt>Tools</dt><dd>Git, GitHub, Linux</dd></div>
+    </dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu"><span>BE Computer Engineering (AI/ML Honors), Don Bosco College of Engineering</span><span>2023 to 2027<br>CGPA 7.45</span></div>
+    <div class="edu"><span>HSSC, Smt. Chandrabhaga Tukoba Naik HSS</span><span>2023<br>77.16%</span></div>
+    <div class="edu"><span>SSC, The New Educational Institute</span><span>2021<br>93.66%</span></div>
+  </section>
+
+  <section id="more">
+    <h2>Certifications and achievements</h2>
+    <dl>
+      <div class="row"><dt>2025</dt><dd>Ethical Hacking, NPTEL</dd></div>
+      <div class="row"><dt>2025</dt><dd>PHP and MySQL Workshop, DBCE C-Codes</dd></div>
+      <div class="row"><dt>2023</dt><dd>State-level chess player</dd></div>
+    </dl>
+  </section>
+
+  <footer>Pranav Kishor Gauns Dessai, Goa, India</footer>
+</main>
+</body>
+</html>
